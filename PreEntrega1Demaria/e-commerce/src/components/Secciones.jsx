@@ -1,21 +1,20 @@
 import React from 'react'
+import Cart from './CartWidget'
 
 const Secciones = () => {
     return (
         <>
             <li className="nav-item">
-                <a className="nav-link active" href="#">Home
-                <span className="visually-hidden">(current)</span>
-                </a>
+                <a className="nav-link" href="#">Productos</a>
             </li>
             <li className="nav-item">
-                <a className="nav-link" href="#">Features</a>
+                <a className="nav-link" href="#">Sobre Nosotros</a>
             </li>
             <li className="nav-item">
-                <a className="nav-link" href="#">Pricing</a>
+                <a className="nav-link" href="#">Contacto</a>
             </li>
             <li className="nav-item">
-                <a className="nav-link" href="#">About</a>
+                <a className="nav-link" href="#"><Cart/></a>
             </li>
         </>
     )
