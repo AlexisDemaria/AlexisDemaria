@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "idCat": 1,
+        "title": "Interruptor Termomagnético",
+        "description": "Siemens",
+        "price": 6000,
+        "pictureUrl": "IT Siemens.jpg"
+    },
+    {
+        "id": 2,
+        "idCat": 1, 
+        "title": "Disyuntor Diferencial", 
+        "description": "Siemens",
+        "price": 7500,
+        "pictureUrl": "Diferencial Siemens.jpg"
+    },
+    {   
+        "id": 3,
+        "idCat": 1, 
+        "title": "Lampara LED",
+        "description": "Osram", 
+        "price": 300,
+        "pictureUrl": "Lampara 12W Osram.jpg"
+    },
+    {
+        "id": 4,
+        "idCat": 1, 
+        "title": "Toma corriente",
+        "description": "Schneider", 
+        "price": 100,
+        "pictureUrl": "Toma 20A Schneider.PNG"
+    },
+    {
+        "id": 5,
+        "idCat": 1, 
+        "title": "Llave punto simple",
+        "description": "Schneider", 
+        "price": 100,
+        "pictureUrl": "Llave tecla Schneider.jpg"
+    },
+    {
+        "id": 6,
+        "idCat": 1, 
+        "title": "Bastidor",
+        "description": "Schneider", 
+        "price": 200,
+        "pictureUrl": "Bastidor Schneider.jpg"
+    },
+    {
+        "id": 7,
+        "idCat": 1, 
+        "title": "Marco embellecedor",
+        "description": "Schneider", 
+        "price": 150,
+        "pictureUrl": "Marco embellecedor Schneider.jpg"
+    },
+    {
+        "id": 8,
+        "idCat": 1, 
+        "title": "Rollo cable",
+        "description": "Prysmian", 
+        "price": 5000,
+        "pictureUrl": "Cable flexible Prysmian 2,5.jpg"
+    },
+    {
+        "id": 9,
+        "idCat": 2, 
+        "title": "Computador Lógico Programable",
+        "description": "Schneider", 
+        "price": 65000,
+        "pictureUrl": "PLC M221.jpg"
+    },
+    {
+        "id": 10,
+        "idCat": 2, 
+        "title": "Contactor trifásico",
+        "description": "Siemens", 
+        "price": 15000,
+        "pictureUrl": "Contactor.jpg"
+    },
+    {
+        "id": 11,
+        "idCat": 2, 
+        "title": "Guardamotor trifásico",
+        "description": "Siemens", 
+        "price": 17500,
+        "pictureUrl": "Guardamotor.jpg"
+    },
+    {
+        "id": 12,
+        "idCat": 1, 
+        "title": "Caja de embutir rectangular",
+        "description": "Genrod", 
+        "price": 500,
+        "pictureUrl": "Caja Embutir Rectangular.jpg"
+    },
+    {
+        "id": 13,
+        "idCat": 2, 
+        "title": "Piloto luminoso",
+        "description": "CHNT", 
+        "price": 250,
+        "pictureUrl": "Piloto Luminoso.jpg"
+    },
+    {
+        "id": 14,
+        "idCat": 2, 
+        "title": "Gabinete metálico",
+        "description": "Genrod", 
+        "price": 35000,
+        "pictureUrl": "Gabinete Metalico.jpg"
+    },
+    {
+        "id": 15,
+        "idCat": 2, 
+        "title": "Variador de Frecuencia",
+        "description": "Siemens", 
+        "price": 85000,
+        "pictureUrl": "Variador de frecuencia.jpg"
+    }
+]
