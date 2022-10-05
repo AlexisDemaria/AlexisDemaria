@@ -1,6 +1,11 @@
-import React from 'react';
+import React, {useState} from 'react';
 
-const ItemDetailContainer = ({item}) => {
+const ItemDetail = ({item}) => {
+    const [cant, setCant] = useState([]);
+    const agregarAlCarrito = () => {
+
+    }
+
     return (
         <>            
         <div className="card" style={{width: '30rem'}}>
@@ -16,4 +21,4 @@ const ItemDetailContainer = ({item}) => {
     );
 }
 
-export default ItemDetailContainer;
+export default ItemDetail;

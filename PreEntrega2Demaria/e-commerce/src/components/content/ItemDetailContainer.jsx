@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from 'react';
 import { useParams } from 'react-router-dom';
 import { buscarStock } from '../layouts/itemListContainer/ItemListContainer';
-import ItemDetailContainer from '../layouts/itemListContainer/ItemDetailContainer';
+import ItemDetail from '../layouts/itemListContainer/ItemDetail';
 
-const Items = () => {
+const Item = () => {
     const [item, setItem] = useState([]);
     const {id} = useParams()
     useEffect(() => {
@@ -15,9 +15,9 @@ const Items = () => {
 
     return (
         <>
-            <ItemDetailContainer item={item}/>
+            <ItemDetail item={item}/>
         </>
     );
 }
 
-export default Items;
+export default Item;
