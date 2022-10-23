@@ -1,3 +1,4 @@
+/* Cards Home */
 .bodyHome{
     display: flex;
     align-items: center;
@@ -14,19 +15,21 @@
     margin: 5px;
 }
 
-.cardImg{
+.cardHome img{
     object-fit: cover;
     max-width:100%;
     height:50%;
 }
 
-.cardText{
+.cardHome div{
     text-align: center;
 }
 
-.cardBtn {
+.cardHome button{
     margin-bottom: 10%;
 }
+
+/* Cards detail */
 
 .cardDetail{
     max-width: 100%;
@@ -44,6 +47,39 @@
 .cardCont{
     margin-top: 15px;
 }
+
+/* Cards categoría */
+
+.bodyCat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 1.5%;
+    max-width: 97%;
+}
+.cardCat{
+    height: 30rem;
+    width: 25rem;
+    margin: 5px;
+}
+
+.cardCat img{
+    object-fit: cover;
+    max-width:100%;
+    height:50%;
+}
+
+.cardCat div{
+    text-align: center;
+}
+
+.cardCat button{
+    margin-bottom: 10%;
+}
+
+/* Form */
 
 .form{
     margin: 0 auto;
@@ -83,4 +119,69 @@
 .contact-form button{
     margin-top: 10px;
     width: 100px;
+}
+
+.buttonsForm{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* Cards carro */
+
+.totalCart{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.cardCart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 5%;
+    width: 500px;
+}
+
+.cardCart div{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.carroVacio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+/* Checkout */
+
+.checkout{
+    margin: 0 auto;
+    margin-top: 5%;
+    width: 500px;
+    background: rgba(255, 255, 255, 0.18);
+    padding: 3%;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+.checkout h2{
+    text-align: center;
+}
+
+.buttonsCheckout{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }

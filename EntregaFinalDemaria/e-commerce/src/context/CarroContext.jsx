@@ -6,24 +6,35 @@ const CarroProvider = (props) => {
     const [carro, setCarro] = useState([]);
     
     const addItem = (item, cont) => {
-        const aux = carro
-        let index = aux.findIndex(items => items.id === item[0])
-        
-        if(index !== -1){
-            aux[index].quantity = cont
+        let n = carro.findIndex(items => items.id === item[0])
+    
+        if(n !== -1){
+            carro[n].quantity = cont
         }else{
-            const itemCarro = {id: item[0], quantity: cont}
-            aux.push(itemCarro)
+            const itemCarro = {id: item[0], docs: item[1], quantity: cont}
+            carro.push(itemCarro)
         }
-        setCarro(aux)
+
+        // const isInCart = carro.some(items => items.id === item[0]) 
+        // if (isInCart){ 
+        //     const prod = carro.map (item => {
+        //         if (item.id === item[0]){
+        //             item.quantity++
+        //         }
+        //     })
+        // } else {
+        //     const itemCarro = {id: item[0], docs: item[1], quantity: cont}
+        //     carro.push(itemCarro)
+        // }
+        setCarro(carro)
         console.log(carro)
     }
 
     const removeItem = (item) => {
-        const aux = carro
-        let index = aux.findIndex(items => items.id === item[0])
-        aux.splice(index, 1)
-        setCarro(aux)
+        const prod = carro.find((items) => items.id === item[0])
+        const n = carro.indexOf(prod)
+        carro.splice(n, 1)
+        setCarro(carro)
         console.log(carro)
     }
 
@@ -32,12 +43,10 @@ const CarroProvider = (props) => {
     const totalPrice = () => {
         return carro.reduce((suma, cont) => suma + cont.quantity * cont.price, 0)
     }
-
-    const totalItems = () => carro.reduce((cont, itemTotal) => cont + itemTotal.quantity, 0)
     
     return (
         <>  
-            <CarroContext.Provider value={{carro, addItem, removeItem, clearCart, totalPrice, totalItems}}>
+            <CarroContext.Provider value={{carro, addItem, removeItem, clearCart, totalPrice}}>
                 {props.children}
             </CarroContext.Provider>
         </>

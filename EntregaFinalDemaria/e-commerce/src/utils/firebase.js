@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-import {collection, addDoc, getFirestore, getDocs, getDoc, deleteDoc, doc, updateDoc} from 'firebase/firestore'
+import {collection, addDoc, getFirestore, getDocs, getDoc, doc,} from 'firebase/firestore'
 
 const firebaseConfig = {
     apiKey: process.env.API_KEY,
@@ -41,27 +41,27 @@ const getItems = async () => {
     return prod
 }
 
-const updateItem = async (id, info) => {
-    const state = await updateDoc(doc(store, 'items', id), info)
-    return state
-}
+// const updateItem = async (id, info) => {
+//     const state = await updateDoc(doc(store, 'items', id), info)
+//     return state
+// }
 
-const delateItem = async (id) => {
-    const state = await deleteDoc(doc(store, 'items', id))
-    return state
-}
+// const delateItem = async (id) => {
+//     const state = await deleteDoc(doc(store, 'items', id))
+//     return state
+// }
 
-const createItem = async (obj) => {
-    const state = await addDoc(collection(store, 'items'), {
-        idCat: obj.idCat,
-        title: obj.title,
-        description: obj.description,
-        price: obj.price,
-        stock: obj.stock,
-        img: obj.pictureUrl
-    })
-    return state
-}
+// const createItem = async (obj) => {
+//     const state = await addDoc(collection(store, 'items'), {
+//         idCat: obj.idCat,
+//         title: obj.title,
+//         description: obj.description,
+//         price: obj.price,
+//         stock: obj.stock,
+//         img: obj.pictureUrl
+//     })
+//     return state
+// }
 
 
-export {loadStore, getItems, getItemId, updateItem, delateItem, createItem}
+export {loadStore, getItems, getItemId}

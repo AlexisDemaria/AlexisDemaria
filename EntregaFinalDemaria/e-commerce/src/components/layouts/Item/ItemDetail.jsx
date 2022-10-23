@@ -20,7 +20,7 @@ const ItemDetail = ({item}) => {
     return (
         <>            
         <div className="card cardDetail" style={{width: '30rem'}}>
-            <img className="card-img-top" src={item[1].img} alt={item.title}/>
+            <img className="card-img-top" src={item[1].img} alt={item[1].title}/>
             <div className="card-body cardDetailComp" >
                 <h3 className="card-title">{item[1].title}</h3>
                 <h4 className="card-text">{item[1].description}</h4>

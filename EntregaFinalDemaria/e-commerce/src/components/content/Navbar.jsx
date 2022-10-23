@@ -1,9 +1,10 @@
 import React from "react";
-import Toggler from "../layouts/Toggler";
-import Secciones from "../layouts/Secciones";
-import Dropdown from "../layouts/Dropdown";
+import Toggler from "../layouts/NavBar/Toggler";
+import Secciones from "../layouts/NavBar/Secciones";
+import Dropdown from "../layouts/NavBar/Dropdown";
 import Cart from "../layouts/cart/CartWidget";
 import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
     return (
@@ -18,7 +19,7 @@ const Navbar = () => {
                         <Dropdown/>
                         </ul>
                         <ul className="navbar-nav ml-auto">
-                            <a className="nav-link" href="#"><Cart/></a>
+                            <Link><Cart/></Link>
                         </ul>
                     </div>
                 </div>

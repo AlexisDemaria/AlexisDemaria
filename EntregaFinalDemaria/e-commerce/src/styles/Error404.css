@@ -1,0 +1,41 @@
+@keyframes blinkblink {  
+    50% { opacity: 0.1; }
+}
+
+.bodyError404 {
+    margin: 0;
+    padding: 0;
+    background-color: #0a1821;
+    color: #fff;
+    text-align: center;
+}
+
+.not-found {
+    width: 560px;
+    height: 225px;
+    margin-right: -10px;
+}
+
+.starry-sky {
+    display: block;
+    width: 100vh;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.notFound-copy {
+    color: #fff;
+    position: fixed;
+    top: 5%;
+    right: 10%;
+    text-align: right;
+}
+
+.notFound-copy h1 {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.all-stars {
+    animation: blinkblink 7s linear infinite;
+}
