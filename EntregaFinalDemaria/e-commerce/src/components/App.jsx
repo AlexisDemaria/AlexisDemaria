@@ -14,18 +14,18 @@ import '../styles/App.css'
 const App = () => {
     return (
         <>
-            <BrowserRouter>
-                <Navbar/>
-                <Routes>
-                    <Route path="/" element={<Home/>}/>
-                    <Route path="/item/:id" element={<Item/>}/>
-                    <Route path="/category/:idCategory" element={<Category/>}/>
-                    <Route path="/contacto" element={<Contacto/>}/>
-                    <Route path="/cart" element={<Cart/>}/>
-                    <Route path='/checkout' element={<Checkout/>}/>
-                    <Route path="*" element={<Error404/>}/>
-                </Routes>
-            </BrowserRouter>
+        <BrowserRouter>
+            <Navbar/>
+            <Routes>
+                <Route path="/" element={<Home/>}/>
+                <Route path="/item/:id" element={<Item/>}/>
+                <Route path="/category/:idCategory" element={<Category/>}/>
+                <Route path="/contacto" element={<Contacto/>}/>
+                <Route path="/cart" element={<Cart/>}/>
+                <Route path='/checkout' element={<Checkout/>}/>
+                <Route path="*" element={<Error404/>}/>
+            </Routes>
+        </BrowserRouter>
         </>
     )
 }

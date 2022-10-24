@@ -133,8 +133,19 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 900px;
 }
 
+.totalCart img{
+    display: flex;
+    justify-content: left;
+    object-fit: cover;
+    max-width: 200px;
+    max-height: 150px;
+}
 
 .cardCart{
     display: flex;
@@ -143,18 +154,23 @@
     align-items: center;
     margin: 0 auto;
     margin-top: 5%;
-    width: 500px;
 }
 
-.cardCart div{
-    margin-top: 5%;
+.cardCart h3{
+    width: 900px;
+}
+
+.cardCart div.buttons{
+    margin-top: 30px;
+    margin-bottom: 5%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    max-width: 500px;
 }
 
-.carroVacio{
+.cartEmpty{
     display: flex;
     flex-direction: column;
     justify-content: center;

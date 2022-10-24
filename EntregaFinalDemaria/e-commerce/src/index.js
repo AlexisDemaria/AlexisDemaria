@@ -4,7 +4,6 @@ import App from './components/App';
 import { CarroProvider } from './context/CarroContext'
 import './styles/index.css';
 import './styles/App.css'
-// import './utils/cargarStockFB'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

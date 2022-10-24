@@ -11,6 +11,7 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
+
 const store = getFirestore()
 
 const loadStore = async () => {
@@ -34,34 +35,10 @@ const getItemId = async (id) =>{
     return items
 }
 
-
 const getItems = async () => {
     const items = await getDocs(collection(store, 'items'))
     const prod = items.docs.map(item => [item.id, item.data()])
     return prod
 }
-
-// const updateItem = async (id, info) => {
-//     const state = await updateDoc(doc(store, 'items', id), info)
-//     return state
-// }
-
-// const delateItem = async (id) => {
-//     const state = await deleteDoc(doc(store, 'items', id))
-//     return state
-// }
-
-// const createItem = async (obj) => {
-//     const state = await addDoc(collection(store, 'items'), {
-//         idCat: obj.idCat,
-//         title: obj.title,
-//         description: obj.description,
-//         price: obj.price,
-//         stock: obj.stock,
-//         img: obj.pictureUrl
-//     })
-//     return state
-// }
-
 
 export {loadStore, getItems, getItemId}

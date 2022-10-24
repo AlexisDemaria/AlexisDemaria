@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
-import {Link}  from 'react-router-dom'
-import {getItems} from '../../utils/firebase';
+import { Link}   from 'react-router-dom'
+import { getItems } from '../../utils/firebase';
 
 const Home = () => {
     const [productos, setProductos] = useState([])

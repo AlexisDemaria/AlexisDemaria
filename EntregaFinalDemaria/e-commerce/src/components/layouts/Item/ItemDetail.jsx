@@ -1,5 +1,5 @@
 import React, {useState, useContext} from 'react';
-import {CarroContext} from '../../../context/CarroContext'
+import { CarroContext } from '../../../context/CarroContext'
 
 const ItemDetail = ({item}) => {
     const [cont, setCont] = useState(1);

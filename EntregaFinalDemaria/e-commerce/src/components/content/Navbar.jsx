@@ -15,8 +15,8 @@ const Navbar = () => {
                     <Toggler/>
                     <div className="collapse navbar-collapse" id="navbarColor01">
                         <ul className="navbar-nav me-auto">
-                        <Secciones/>
-                        <Dropdown/>
+                            <Secciones/>
+                            <Dropdown/>
                         </ul>
                         <ul className="navbar-nav ml-auto">
                             <Link><Cart/></Link>
